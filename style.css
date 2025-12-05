@@ -166,3 +166,35 @@ main {
     font-size: 20px;
     font-weight: 700;
 }
+
+.assetcontainer {
+    width: 70%;
+    display: grid;
+}
+
+#asset {
+    width: 480px;
+    max-height: 580px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    box-shadow: 1px 1px 7px rgb(165, 164, 164);
+}
+#asset_title {
+    color: white;
+    background-color: black;
+    padding: 5px 13px;
+    font-size: 16px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;   
+}
+#asset_description {
+    padding: 15px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#desc_content {
+    font-size: 16px;
+}

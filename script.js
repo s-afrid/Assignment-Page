@@ -11,6 +11,7 @@ async function load_data() {
     render_sidepanel(data)
     render_projectheader(data)
     render_description(data)
+    render_assets(data)
 }
 
 function render_projectheader(data) {
@@ -27,6 +28,10 @@ function render_description(data) {
     let desc = data.short_description;
     let description = document.getElementById('desc')
     description.innerText = desc;
+}
+
+function render_assets(data) {
+    
 }
 
 function render_sidepanel(data) {
