@@ -73,11 +73,12 @@ function render_assets(data) {
         } else if(list.type === 'input_asset') {
             asset.innerHTML += `
                 <div class="asset_content">
-                  <form>
-                    <label>Title</label>
-                    <input type="text" />
-                    <label>Content</label>
-                    <input type="
+                  <form class="input_content">
+                    <label for="title">Title</label>
+                    <input type="text" name="title"/>
+                    <label for="content">Content</label>
+                    <textarea name="content" row="100" column="20">
+                    </textarea>
                   </form>
                 </div>
             `

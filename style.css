@@ -44,7 +44,7 @@ main {
 }
 
 #sidepanel {
-    position: absolute;
+    position: fixed;
     width: 132px;
     height: 70vh;
     border-radius: 0px 20px 20px 20px;
@@ -211,7 +211,7 @@ main {
     width: 80%;
 }
 .asset_content {
-    height: 480px;
+    height: 90%;
     display: flex;
     justify-content: center;
 }
