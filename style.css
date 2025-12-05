@@ -122,8 +122,10 @@ main {
 
 .maincontainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 .projectheader {
     width: 70%;
@@ -151,3 +153,16 @@ main {
     transform: scale(0.9);
 }
 
+.projectdescription {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #E9ECEF;
+    border-radius: 6px;
+}
+#desc_title{
+    font-size: 20px;
+    font-weight: 700;
+}

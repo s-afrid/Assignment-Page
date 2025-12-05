@@ -10,6 +10,7 @@ async function load_data() {
     data = await data.json()
     render_sidepanel(data)
     render_projectheader(data)
+    render_description(data)
 }
 
 function render_projectheader(data) {
@@ -17,6 +18,15 @@ function render_projectheader(data) {
     let project_title = document.getElementById("project_title")
     project_title.innerText = title
 
+}
+function render_description(data) {
+    let title = data.tasks[0].task_title;
+    let desc_title = document.getElementById('desc_title')
+    desc_title.innerHTML = title
+
+    let desc = data.short_description;
+    let description = document.getElementById('desc')
+    description.innerText = desc;
 }
 
 function render_sidepanel(data) {
