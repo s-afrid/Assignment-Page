@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigations {
+    list-style: none;
+}
+
+.profile_holder {
+    width: 37px;
+    height: 37px;
+}
+
+.profile {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:  #F0F0F0;
+    padding: 16px 0px;
+    box-shadow: 2px 0px 15px rgb(165, 164, 164);
+}
+
+.navigations {
+    display: flex;
+    gap: 20px;
+}
