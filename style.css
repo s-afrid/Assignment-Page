@@ -82,6 +82,11 @@ nav {
     margin-top: 30px;
     font-size: 25px;
     font-weight: 400;
+    transition: all 300ms ease-in-out 0ms;
+}
+#badge:hover{
+    color: #133aff;
+    border: 2px solid #133aff;
 }
 
 #panel {

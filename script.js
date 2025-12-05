@@ -4,6 +4,7 @@ let panel = document.getElementById("panel")
 let sidepanel = document.getElementById("sidepanel")
 let badge = document.getElementById("badge")
 var data;
+var assets;
 async function load_data() {
     data = await fetch('http://127.0.0.1:3000/data.json');
     data = await data.json()
@@ -14,12 +15,14 @@ function render_sidepanel(data) {
     let tasktitle = document.getElementById("tasktitle")
     tasktitle.innerText = data.tasks[0].task_title
     
+    assets = data.tasks[0].assets
+    for (const asset of assets) {
+        panel.innerHTML += `<li>${asset.asset_title}</li>`
+    }
+    
 }
 
-function sidepanel_action() {
-    arrow.addEventListener('click',async (e)=>{
-        
-
+const sidepanel_action = async (e) => {
         if (arrow.style.rotate === '' || e.target.style.rotate === '0deg') {
             e.target.style.rotate = '180deg';
             sidepanel.style.width = '392px';
@@ -32,14 +35,12 @@ function sidepanel_action() {
             panelhead.style.visibility = 'hidden';
             sidepanel.style.width = '132px';
             badge.style.display = 'flex'
-        }
-        
-    })    
+        }    
 }
 
 async function main(){
     load_data()
-    sidepanel_action()
+    arrow.addEventListener('click', sidepanel_action)
 }
 
 main()
