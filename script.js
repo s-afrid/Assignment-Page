@@ -9,6 +9,14 @@ async function load_data() {
     data = await fetch('http://127.0.0.1:3000/data.json');
     data = await data.json()
     render_sidepanel(data)
+    render_projectheader(data)
+}
+
+function render_projectheader(data) {
+    let title = data.title
+    let project_title = document.getElementById("project_title")
+    project_title.innerText = title
+
 }
 
 function render_sidepanel(data) {
