@@ -6,7 +6,7 @@ let badge = document.getElementById("badge")
 var data;
 
 async function load_data() {
-    data = await fetch('http://127.0.0.1:3000/data.json');
+    data = await fetch('./data.json');
     data = await data.json()
     render_sidepanel(data)
     render_projectheader(data)

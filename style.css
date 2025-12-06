@@ -199,6 +199,10 @@ main {
     align-items: center;
     border-radius: 15px 15px 0px 0px;   
 }
+.asset_title img:hover {
+    cursor: pointer;
+}
+
 .asset_description {
     padding: 15px 23px;
     display: flex;
@@ -221,14 +225,13 @@ main {
     right: 0;
     top: 100px;
     width: 70px;
-    height: 49vh;
     box-shadow: 1px 1px 7px rgb(165, 164, 164);
     border-radius: 20px 0px 0px 20px;
 }
 .notice_board > p {
     width: 5%;
     font-size: 13px;
-    height: 43vh;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     text-align: center;

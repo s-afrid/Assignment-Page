@@ -16,10 +16,10 @@ height: 70%;
     gap: 13px;
 }
 .input_content > * {
-    width: 90%;
+    width: 85%;
 }
 .input_content > textarea {
-    height: 45%;
+    height: 40%;
     border: 1px solid rgb(173, 173, 173);
     border-radius: 15px;
 }
