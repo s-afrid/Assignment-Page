@@ -244,3 +244,19 @@ main {
     position: relative;
     right: 10px;
 }
+
+.other {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.other img {
+    background-color: #0029FF;
+    padding: 15px;
+    border-radius: 50px;
+}
